@@ -1,0 +1,60 @@
+***INSTALL PIP
+> sudo apt-get update
+> sudo apt-get install python-dev build-essential 
+> sudo apt-get install python-pip
+> pip install --upgrade pip
+
+***INSTALL PYTHON2.7
+> sudo apt-get install python2.7
+
+***INSTALL AIML
+python2.7 -m pip install aiml
+
+***DOWNLOAD ALICEBOT AIML FILES
+https://code.google.com/archive/p/aiml-en-us-foundation-alice/downloads
+
+***INCASE OF INSTALLATION PROBLEMS
+Open Terminal & run:
+> sudo gedit /etc/apt/sources.list
+Replace url in.archive.ubuntu.com and security.ubuntu.com with old-releases.ubuntu.com
+
+***INSTALL PYCHARM
+> sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+> sudo apt-get update
+> sudo apt-get install ubuntu-make
+
+> umake ide pycharm
+OR
+> umake ide pycharm-professional
+
+***PYCHARM PROJECT FOLDER LOCATION
+/home/rsquare/PycharmProjects/Chatbot
+
+***CHATBOT PROJECT FILES
+https://www.devdungeon.com/content/ai-chat-bot-python-aiml
+1. CREATE chatBotMain.py
+2. CREATE std-startup.xml
+
+SEE ALSO: https://www.codeproject.com/Articles/36106/Chatbot-Tutorial#text_to_speech
+2. TUTORIAL FOR ADDING KNOWLEDGE
+https://www.pandorabots.com/botmaster/en/tutorial#ch1
+
+***TO IMPLEMENT TEXT TO SPEECH FEATURE
+python2.7 -m pip install git+https://github.com/rhdunn/espeak.git
+
+***TASK 1 -> CREATING AIML FILES
+<pattern> tags
+<template> tags
+<srai> tags = Symbolic Reduction
+<star> tags = to get the input
+<that> tags = to respond based on context
+
+***TASK 2 -> STORE CONVERSATIONS
+Add timestamp to each file and use FileIO
+
+**TASK 3 -> RESTful Services
+Forecast.io
+> pip install python-forecastio
+
+https://www.botlibre.com/forum-post?id=13020078
+access a web service from AIML using the SRAIX tag

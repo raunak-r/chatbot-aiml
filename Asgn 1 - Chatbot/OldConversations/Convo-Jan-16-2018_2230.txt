@@ -1,0 +1,8 @@
+Enter your message >> what is weather
+
+Enter your message >> search weather delhi
+Here is the current weather and the forecast for the next few days in Delhi.
+Enter your message >> weather
+I don't know where you live to tell you what the weather will be.Where do you live and I'll tell you the weather forecast.
+Enter your message >> Delhi
+

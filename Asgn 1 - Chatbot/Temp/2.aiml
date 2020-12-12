@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+
+<category>
+<pattern>SEARCH WEATHER *</pattern>
+<template><oob><botecho>weather <star/></botecho></oob>
+</template>
+</category>
+
+
+<category>
+<pattern>SEARCH WEATHER *</pattern>
+<template>
+<think><set name="weatherlocation"><formal><star/></formal></set></think>
+<oob><url>http://www.square-bear.co.uk/mitsuku/weather.php?location=<get name="weatherlocation"/>&amp;name=<get name="name"/></url></oob>
+Here is the current weather and the forecast for the next few days in <get name="weatherlocation"/>.
+</template>
+</category>
+
+<category>
+<pattern>WEATHER</pattern>
+<template>
+<condition> 
+<li name="location" value="*"> <srai>search weather <get name="location"/></srai></li> 
+<li>I don't know where you live to tell you what the weather will be.<br/><br/>Where do you live and I'll tell you the weather forecast.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>WHERE DO YOU LIVE AND I WILL TELL YOU THE WEATHER FORECAST</that>
+<template>
+<think><set name="location"> <person/></set></think>
+<srai>search weather <star/></srai>
+</template>
+</category>
+
+<category><pattern>_ IS THE WEATHER IN YOUR PLACE</pattern><template><srai>search weather Leeds</srai></template></category>
+
+
+
+
+  <category>
+    <pattern>WHATS THE WEATHER</pattern>
+    <template><srai> WEATHER </srai></template>
+  </category>
+  <category>
+    <pattern>WHATS THE WEATHER *</pattern>
+    <template><srai> WEATHER <star/></srai></template>
+  </category>
+  <category>
+    <pattern>WEATHER</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TODAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TODAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TODAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TOMORROW</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TOMORROW</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER MONDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py MONDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER TUESDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py TUESDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER WEDNESDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py WEDNESDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER THURSDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py THURSDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER FRIDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py FRIDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER SATURDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py SATURDAY</system></template>
+  </category>
+  <category>
+    <pattern>WEATHER SUNDAY</pattern>
+    <template><think><set name="topic">weather</set></think>
+<system>./scripts/weather.py SUNDAY</system></template>
+  </category>
+</aiml>

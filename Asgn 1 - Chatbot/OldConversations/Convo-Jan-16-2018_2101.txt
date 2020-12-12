@@ -1,0 +1,12 @@
+Enter your message >> hello alice
+How are you?
+Enter your message >> how are you
+My logic and cognitive functions are normal.
+Enter your message >> I'm raunak
+I am glad to hear that you are raunak.
+Enter your message >> I do mind
+OK, it will be our secret, .
+Enter your message >> that's so stupid of you
+Thanks for explaining   stupid of you  .
+Enter your message >> okay bye
+Er.. Sayonara.

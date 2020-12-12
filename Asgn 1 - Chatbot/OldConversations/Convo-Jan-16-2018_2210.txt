@@ -1,0 +1,18 @@
+Enter your message >> what is the weather?
+Cloudy.
+Enter your message >> what is weather
+The general condition of the atmosphere at a particular time and place, with regard to the temperature, moisture, cloudiness, etc.
+Enter your message >> how cold is it
+I am not sure if I can quantify the answer.  Try searching the web.
+Enter your message >> how hot is it
+Is this a joke?
+Enter your message >> yes
+Next question?
+Enter your message >> nope
+Would you rather make a statement?
+Enter your message >> no
+You can tell me anything.
+Enter your message >> no
+It's all good.
+Enter your message >> clear
+I really enjoy speaking with you and look forward to chatting again.

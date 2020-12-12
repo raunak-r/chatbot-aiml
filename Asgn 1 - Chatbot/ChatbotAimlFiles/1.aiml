@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category><pattern>* WINGIES *</pattern>
+<template>THEY ARE REALLY STUPID</template>
+</category>
+
+<category>
+	<pattern>HELLO</pattern>
+	<template>Are you saying hello.</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>HELLO</that>
+	<template>ohh, Hello Mister</template>
+</category>
+
+<category>
+	<pattern>NO</pattern>
+	<that>HELLO</that>
+	<template>Ohh, Nevermind. I just thought you said hello.</template>
+</category>
+
+
+
+<category>
+	<pattern>EAT IN BITS</pattern>	
+	<template>Would you like to know the places to eat here</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+	<that>Would you like to know the places to eat here</that>
+	<template>We have C3, BNB, Yummpys, but the mess is the best.</template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW ANY PLACE TO EAT * IN *</pattern>
+	<template>
+		<srai>EAT IN BITS</srai>
+	</template>
+</category>
+
+<category>
+	<pattern>* EAT IN *</pattern>	
+	<template>
+		<srai>EAT IN BITS</srai>
+	</template>
+</category>
+<category>
+	<pattern>* EAT *</pattern>	
+	<template>
+		<srai>EAT IN BITS</srai>
+	</template>
+</category>
+<category>
+	<pattern>* FOOD IN *</pattern>	
+	<template>
+		<srai>EAT IN BITS</srai>
+	</template>
+</category>
+
+</aiml>

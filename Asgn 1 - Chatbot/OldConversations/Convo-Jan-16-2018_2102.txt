@@ -1,0 +1,14 @@
+Enter your message >> hello alice
+Hi there!
+Enter your message >> I don't want to talk
+What would you rather be doing?
+Enter your message >> what is your name
+Nameless
+Enter your message >> what is your name
+My name is Nameless.
+Enter your message >> which country are you from?
+Romania .
+Enter your message >> which country?
+The big one, I think.
+Enter your message >> okay bye
+Pardon me?. Adios.

@@ -1,0 +1,6 @@
+Enter your message >> eat in bits
+Would you like to know about the places to eat here in BITS?
+Enter your message >> yes
+
+Enter your message >> clear
+
